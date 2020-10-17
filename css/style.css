@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.header{
+    width: 100%;
+    position: relative;
+    height: 95vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../media/pizza.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* color: lightblue; */
+}
+#hero{
+    /* margin-left: -20px; */
+    color: white;
+    top: 30%;
+    position: absolute;
+    z-index: 2;
+}
+
+#welcome{
+    background-color:#d5dbe3;
+    text-align: center;
+    
+}
+.welcome-text{
+    font-weight: lighter;
+    font-size: 40px;
+}
+.links{
+    border-bottom: 1px solid red;
+}
+.break-section{
+    margin-top: 50px;
+    height: 50vh;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../media/break-section.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}

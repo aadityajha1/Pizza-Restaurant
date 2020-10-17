@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Menu</title>
+</head>
+<body style="background-color: #d1d1d1;">
+    <!-- Navbar of the Page -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  sticky-top mb-0">
+        <div class="container">
+        <a href="index.html" class="navbar-brand">PizzaShop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5 font-weight-bold" >
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-home"></i> Home</a></li>
+                <li class="nav-item active"><a href="" class="nav-link"><i class="fa fa-list"></i> Menu</a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-info"></i> About Us</a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-address-card"></i> Contact Us</a></li>
+                </ul>
+                <span class="nav-text mx-md-5">
+                    <a type="button" data-toggle="modal" data-target="#orderModal" class="btn btn-sm btn-outline-warning rounded-0">INSTANT ORDER</a>
+                </span>
+                <span class="nav-text ">
+                    <a href=""><i class="fa fa-shopping-cart fa-lg text-white"></i></a>
+                </span>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Order Now Modal -->
+    <div class="modal fade" id="orderModal" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary" >
+                    <h5 class="text-light" >Order Pizza Now</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" >
+                    <form action="">
+                        <div class="form-group row">
+                            <label for="pizzaType" class="col-sm-3 form-group-label">Pizza Type</label>
+                            <div class="col-sm-8">
+                                <select name="pizzaType" id="pizzaType" class="form-control">
+                                    <option selected>Choose Pizza Type...</option>
+                                    <option value="1">Chicken</option>
+                                    <option value="2">Pepperoni</option>
+                                    <option value="3">Cheese</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="pizzaSize" class="form-group-label col-sm-3">Pizza Size</label>
+                            <div class="col-sm-8">
+                                <select name="pizzaSize" id="pizzaSize" class="form-control">
+                                    <option selected>Pizza Size...</option>
+                                    <option value="1">Small</option>
+                                    <option value="2">Medium</option>
+                                    <option value="3">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="quantity" class="form-group-label col-sm-3">Quantity</label>
+                            <div class="col-sm-8">
+                                <input type="number" id="quantity" class="form-control" placeholder="Quantity">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 offset-sm-3">
+                            <button type="submit" class="btn btn-info">Submit Order</button>
+                            <button type="button" data-dismiss="modal" class="btn btn-warning">Cancel</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-0" >
+    <div class="container" >
+        <div class="row mt-4">
+
+            <h2 class="display-4 col-12 text-center">Our Special Pizzas</h2>
+        </div>
+        <div class="row mt-5 ">
+            <!-- <div class="col-6 col-sm-3"> -->
+                <div class="media align-self-center">
+                    <img src="./media/cheesePizza.jpg" alt="Cheeze Pizza" class="img-fluid mr-3 align-self-center"  height="200" width="200">
+                    <div class="media-body">
+                        <h5 class="card-title mt-0">Cheeze Pizza <span class="badge badge-danger">Classic</span></h5>
+                        <span class="text-secondary">Price: $200</span>
+                        <p class="card-text text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <button type="button" class="btn btn-outline-info  rounded-0"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                    </div>
+                </div>
+                <!-- <hr> -->
+                <div class="media mt-4 ">
+                    <img src="./media/cheesePizza.jpg" alt="Cheeze Pizza" class="img-fluid mr-3  align-self-center" height="200" width="200">
+                    <div class="media-body">
+                        <h5 class="card-title mt-0">Pepperoni Pizza <span class="badge badge-danger">Spicy</span></h5>
+                        <span class="text-secondary">Price: $200</span>
+                        <p class="card-text text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <button type="button" class="btn btn-outline-info  rounded-0"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="break-section">
+                <h2 class="display-4 text-center">Break Section</h2>
+            </div>
+            <div class="container">
+                <div class="row mt-5">
+                    
+                <!-- <hr style="background-color: black; color: black; height: 2px;"> -->
+                <div class="media mt-4 ">
+                    <img src="./media/cheesePizza.jpg" alt="Cheeze Pizza" class="img-fluid mr-3  align-self-center" height="200" width="200">
+                    <div class="media-body">
+                        <h5 class="card-title mt-0">Chicken Pizza <span class="badge badge-danger">Popular</span></h5>
+                        <span class="text-secondary">Price: $200</span>
+                        <p class="card-text text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <button type="button" class="btn btn-outline-info  rounded-0"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+
+                    </div>
+                </div>
+
+                <div class="media mt-4 ">
+                    <img src="./media/cheesePizza.jpg" alt="Cheeze Pizza" class="img-fluid mr-3  align-self-center" height="200" width="200">
+                    <div class="media-body">
+                        <h5 class="card-title mt-0">Buff Pizza</h5>
+                        <span class="text-secondary">Price: $200</span>
+                        <p class="card-text text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <button type="button" class="btn btn-outline-info  rounded-0"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+
+                    </div>
+                </div>
+
+                <div class="media mt-4 ">
+                    <img src="./media/cheesePizza.jpg" alt="Cheeze Pizza" class="img-fluid mr-3  align-self-center" height="200" width="200">
+                    <div class="media-body">
+                        <h5 class="card-title mt-0">Chicken Pizza</h5>
+                        <span class="text-secondary">Price: $200</span>
+                        <p class="card-text text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <button type="button" class="btn btn-outline-info  rounded-0"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    
+</div>
+</div>
+
+    <!-- Footer of the Page -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-3 pt-4">
+                    <ul class="list-unstyled  text-white p-2">
+                       <li><a href="#" class="text-decoration-none text-white links ">HOME</a></li>
+                       <li><a href="" class="text-decoration-none text-white links ">ABOUT US</a></li>
+                       <li><a href="" class="text-decoration-none text-white links">MENU</a></li>
+                       <li><a href="" class="text-decoration-none text-white links">CONTACT US</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 col-md-6 offset-md-4 text-secondary"><p>&#169; Copyright ABC Pizza Services</p></div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -3,9 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Pizza Shop</title>
 </head>
 <body>
-    <h1>Index Page</h1>
+    <!-- Navbar of the Page -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  sticky-top">
+        <div class="container">
+        <a href="" class="navbar-brand">PizzaShop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5 font-weight-bold" >
+                <li class="nav-item active"><a href="" class="nav-link"><i class="fa fa-home"></i> Home</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link"><i class="fa fa-list"></i> Menu</a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-info"></i> About Us</a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-address-card"></i> Contact Us</a></li>
+                </ul>
+                <span class="nav-text mx-md-5">
+                    <a type="button" data-toggle="modal" data-target="#orderModal" class="btn btn-sm btn-outline-warning rounded-0">INSTANT ORDER</a>
+                </span>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Order Now Modal -->
+    <div class="modal fade" id="orderModal" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary" >
+                    <h5 class="text-light" >Order Pizza Now</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" >
+                    <form action="">
+                        <div class="form-group row">
+                            <label for="pizzaType" class="col-sm-3 form-group-label">Pizza Type</label>
+                            <div class="col-sm-8">
+                                <select name="pizzaType" id="pizzaType" class="form-control">
+                                    <option selected>Choose Pizza Type...</option>
+                                    <option value="1">Chicken</option>
+                                    <option value="2">Pepperoni</option>
+                                    <option value="3">Cheese</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="pizzaSize" class="form-group-label col-sm-3">Pizza Size</label>
+                            <div class="col-sm-8">
+                                <select name="pizzaSize" id="pizzaSize" class="form-control">
+                                    <option selected>Pizza Size...</option>
+                                    <option value="1">Small</option>
+                                    <option value="2">Medium</option>
+                                    <option value="3">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="quantity" class="form-group-label col-sm-3">Quantity</label>
+                            <div class="col-sm-8">
+                                <input type="number" id="quantity" class="form-control" placeholder="Quantity">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 offset-sm-3">
+                            <button type="submit" class="btn btn-info">Submit Order</button>
+                            <button type="button" data-dismiss="modal" class="btn btn-warning">Cancel</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header >
+        <div  class="jumbotron header rounded-0 m-0">
+            <div id="hero" class=" col-11 col-sm-5 offset-sm-3">
+                <h2 class="display-1 text-center text-light">PizzaShop</h2>
+                <hr style="background-color: #fff;">
+                <h4 class="text-center">Opening Hours</h4>
+                <div class="text-center">
+                    <div class="row offset-md-1">
+                        <dt class="text-inline d-inline-block  text-light">Monday-Friday</dt>
+                        <dd class="col-sm-9 d-inline-block text-light ml-auto">08: 00 AM - 5:00 PM </dd>
+                    
+                    </div>
+                    <div class="row offset-md-1">
+                        <dt class="text-inline d-inline  text-light">Weekends</dt>
+                        <dd class="col-sm-9 d-inline text-light ml-auto">08: 00 AM - 2:00 PM</dd>
+                    
+                    </div>
+                    <div class="col-sm-4 offset-sm-4">
+                        <a type="button" class="btn btn-warning rounded-0 d-block mt-3">Book Table</a>
+
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- Body of the page -->
+    <div id="welcome" class="jumbotron rounded-0 m-0">
+        <div class="row welcome-content col-12 col-md-6 offset-md-3">
+            <span  class="welcome-text text-center ml-5">Welcome to Our Pizza Shop</span>
+            <p class="text-justify p-2">PizzaShop was the first restaurant to open in somewhere, the resturant was designed with the history in mind we have created a soft industrial dining room, combined with an open kitchen, coffee take out bar and alovely awesome on site coffee roastery. </p>
+            <hr>
+            <span class="d-inline blockquote-footer ml-auto">MASTER CHIEF</span>
+            <hr> 
+        </div>
+    </div>
+    
+    <!-- Footer of the Page -->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-2 pt-4">
+                    <ul class="list-unstyled  text-white p-2">
+                       <li><a href="#" class="text-decoration-none text-white links ">HOME</a></li>
+                       <li><a href="" class="text-decoration-none text-white links ">ABOUT US</a></li>
+                       <li><a href="" class="text-decoration-none text-white links">MENU</a></li>
+                       <li><a href="" class="text-decoration-none text-white links">CONTACT US</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 col-md-6 offset-md-4 text-secondary"><p>&#169; Copyright ABC Pizza Services</p></div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
