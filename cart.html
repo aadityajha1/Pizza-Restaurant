@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cart</title>
+</head>
+<body>
+    <!-- Navbar of the Page -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  sticky-top mb-0">
+        <div class="container">
+        <a href="index.html" class="navbar-brand">PizzaShop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5 font-weight-bold" >
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-home"></i> Home</a></li>
+                <li class="nav-item "><a href="menu.html" class="nav-link"><i class="fa fa-list"></i> Menu</a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-info"></i> About Us</a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-address-card"></i> Contact Us</a></li>
+                </ul>
+                
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="jumbotron mb-0">
+        <h2 class="display-3 col-12 text-center mb-5">Your Billing</h2>
+        <div class="row m-4 col-md-10 offset-md-2">
+            <table class="table table-bordered offset-md-2">
+                <thead>
+                    <tr>
+                        <th>S. No.</th>
+                        <th>Pizza Type</th>
+                        <th>Pizza Size</th>
+                        <th>Quantity</th>
+                        <th>Price ($)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Chicken Pizza</td>
+                        <td>Medium</td>
+                        <td>3</td>
+                        <td>150</td>
+                        <td>
+                            <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn btn-secondary"><i class="fa fa-minus"></i> </button>
+                            <button type="button" class="btn btn-danger">Remove</button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Chicken Pizza</td>
+                        <td>Medium</td>
+                        <td>3</td>
+                        <td>200</td>
+                        <td>
+                            <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn btn-secondary"><i class="fa fa-minus"></i> </button>
+                            <button type="button" class="btn btn-danger">Remove</button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Chicken Pizza</td>
+                        <td>Medium</td>
+                        <td>3</td>
+                        <td>170</td>
+                        <td>
+                            <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+                            <button type="button" class="btn btn-secondary"><i class="fa fa-minus"></i> </button>
+                            <button type="button" class="btn btn-danger">Remove</button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th colspan="4">Total</th>
+                        <td>1000</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+        </div>
+    </div>
+
+    
+    <!-- Footer of the Page -->
+    <footer class="bg-dark text-white mt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-3 pt-4">
+                    <ul class="list-unstyled  text-white p-2">
+                       <li><a href="#" class="text-decoration-none text-white links ">HOME</a></li>
+                       <li><a href="" class="text-decoration-none text-white links ">ABOUT US</a></li>
+                       <li><a href="" class="text-decoration-none text-white links">MENU</a></li>
+                       <li><a href="" class="text-decoration-none text-white links">CONTACT US</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 col-md-6 offset-md-4 text-secondary"><p>&#169; Copyright ABC Pizza Services</p></div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
