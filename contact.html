@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"> -->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <!-- Navbar of the Page -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  sticky-top mb-0">
+        <div class="container">
+        <a href="index.html" class="navbar-brand">PizzaShop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5 font-weight-bold" >
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-home"></i> Home</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link"><i class="fa fa-list"></i> Menu</a></li>
+                <li class="nav-item "><a href="aboutus.html" class="nav-link"><i class="fa fa-info"></i> About Us</a></li>
+                <li class="nav-item active"><a href="" class="nav-link"><i class="fa fa-address-card"></i> Contact Us</a></li>
+                </ul>
+                <span class="nav-text mx-md-5">
+                    <a type="button" data-toggle="modal" data-target="#orderModal" class="btn btn-sm btn-outline-warning rounded-0">INSTANT ORDER</a>
+                </span>
+                <span class="nav-text ">
+                    <a href="cart.html"><i class="fa fa-shopping-cart fa-lg text-white"></i></a>
+                </span>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Order Now Modal -->
+    <div class="modal fade" id="orderModal" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary" >
+                    <h5 class="text-light" >Order Pizza Now</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" >
+                    <form action="">
+                        <div class="form-group row">
+                            <label for="pizzaType" class="col-sm-3 form-group-label">Pizza Type</label>
+                            <div class="col-sm-8">
+                                <select name="pizzaType" id="pizzaType" class="form-control">
+                                    <option selected>Choose Pizza Type...</option>
+                                    <option value="1">Chicken</option>
+                                    <option value="2">Pepperoni</option>
+                                    <option value="3">Cheese</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="pizzaSize" class="form-group-label col-sm-3">Pizza Size</label>
+                            <div class="col-sm-8">
+                                <select name="pizzaSize" id="pizzaSize" class="form-control">
+                                    <option selected>Pizza Size...</option>
+                                    <option value="1">Small</option>
+                                    <option value="2">Medium</option>
+                                    <option value="3">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="quantity" class="form-group-label col-sm-3">Quantity</label>
+                            <div class="col-sm-8">
+                                <input type="number" id="quantity" class="form-control" placeholder="Quantity">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 offset-sm-3">
+                            <button type="submit" class="btn btn-info">Submit Order</button>
+                            <button type="button" data-dismiss="modal" class="btn btn-warning">Cancel</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Body -->
+    <div class="container ">
+        <div class="row">
+            <ol class="col-12 col-sm-2 breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Contact Us</li>
+            </ol>
+            <div class="col-12">
+               <h3>Contact Us</h3>
+               <hr>
+            </div>
+        </div>
+
+        <div class="row row-content mb-5">
+           <div class="col-12">
+              <h3>Location Information</h3>
+           </div>
+            <div class="col-12 col-sm-4 offset-sm-1">
+                   <h5>Our Address</h5>
+                    <address style="font-size: 100%">
+		              121, Clear Water Bay Road<br>
+		              XYZ street<br>
+		              AUSTRALIA<br>
+		              <i class="fa fa-phone"></i>: +123 1234 5678<br>
+		              <i class="fa fa-fax"></i>: +123 8765 4321<br>
+		              <i class="fa fa-envelope"></i>:
+                        <a href="mailto:pizza@food.net">pizzashop@food.net</a>
+		           </address>
+            </div>
+            <div class="col-12 col-sm-6 offset-sm-1">
+                <h5>Map of our Location</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d174656.97491169555!2d153.0349724952912!3d-27.49742395325488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91579aac93d233%3A0x402a35af3deaf40!2sBrisbane%20QLD%2C%20Australia!5e0!3m2!1sen!2snp!4v1603017706781!5m2!1sen!2snp" width="500" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="col-12 col-sm-11 offset-sm-1">
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary " href="tel:+1230322346830"><i class="fa fa-phone"></i> Call</a>
+                    <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                    <a role="button" class="btn btn-success" href="mailto:aadityajha2000@gmail.com"><i class="fa fa-envelope-o"></i> Email</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row row-content">
+           <div class="col-12">
+              <h3>Send us your Feedback</h3>
+           </div>
+            <div class="col-12 col-md-9">
+                <form action="">
+                    <div class="form-group row">
+                        <label for="firstname" class="col-md-2 col-form-label">First Name:</label>
+                        <div class="col-md-10">
+                            <input type="text" id="firstname" name="firstname" placeholder="First Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lastname" class="col-md-2 col-form-label">Last Name:</label>
+                        <div class="col-md-10">
+                            <input type="text" id="lastname" name="lastname" placeholder="Last Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.:</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" id="areacode" name="areacode" placeholder="Area Code" class="form-control">
+                        </div>
+                        <div class="col-7 col-md-7">
+                            <input type="tel" id="telnum" name="telnum" placeholder="Tel. Number" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="emailid" class="col-md-2 col-form-label">Email:</label>
+                        <div class="col-md-10">
+                            <input type="email" id="emailid" name="emailid" placeholder="Email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 offset-md-2">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="approve" id="approve">
+                                <label for="approve" class="form-check-label">
+                                    <strong>May we contact you?</strong>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1">
+                            <select name="" id="" class="form-control">
+                                <option value="Tel.">Tel.</option>
+                                <option value="">Email</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback:</label>
+                        <div class="col-md-10">
+                            <textarea type="textarea" id="feedback" name="emailid" rows="12" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button class="btn btn-primary" type="submit">Send Feedback</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+             <div class="col-12 col-md">
+            </div>
+       </div>
+       </div>
+       <footer class="bg-dark text-white mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-3 pt-4">
+                    <ul class="list-unstyled  text-white p-2">
+                       <li><a href="#" class="text-decoration-none text-white links ">HOME</a></li>
+                       <li><a href="" class="text-decoration-none text-white links ">ABOUT US</a></li>
+                       <li><a href="" class="text-decoration-none text-white links">MENU</a></li>
+                       <li><a href="" class="text-decoration-none text-white links">CONTACT US</a></li> 
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center float-right">
+                    <h3 class="text-center">Social Links</h3>
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google " href="http://google.com/+"><span class="fa fa-google-plus"></span></a>
+                        <a class="btn btn-social-icon btn-facebook " href="http://www.facebook.com/profile.php?id="><span class="fa fa-facebook pr-1"></span></a>
+                        <a class="btn btn-social-icon btn-linkedin " href="http://www.linkedin.com/in/"><span class="fa fa-linkedin"></span></a>
+                        <a class="btn btn-social-icon btn-twitter " href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-yt  bg-danger" href="http://youtube.com/"><span class="fa fa-youtube pr-1 text-light  "></span> </a>
+                        <a class="btn btn-social-icon bg-light" href="mailto:"><i class="fa fa-envelope-o fa-lg "></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-10 col-md-6 offset-md-4 text-secondary"><p>&#169; Copyright ABC Pizza Services</p></div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS, Jquery -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

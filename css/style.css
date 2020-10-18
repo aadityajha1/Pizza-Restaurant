@@ -6,7 +6,7 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 .header{
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     height: 95vh;
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../media/pizza.jpg') ;
@@ -46,4 +46,20 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+.btn-facebook{
+    background-color: #4267B2;
+    color: white;
+}
+.btn-linkedin{
+    background-color:  #0e76a8;
+    color: white;
+}
+.btn-twitter{
+    background-color: #00acee;
+    color: white;
+}
+.btn-google{
+    background-color: #db4a39;
+    color: white;
 }
