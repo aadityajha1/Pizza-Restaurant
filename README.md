@@ -5,7 +5,7 @@ This is a static website that servers the customers of Pizza Restaurant. This we
 
 ## Installation
 
-First install the dependencies (i.e. node_modules) for this project by following command:
+First install the dependencies (i.e. **`node_modules`**) for this project by following command:
 
 ```bash
 
